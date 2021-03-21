@@ -28,7 +28,7 @@ public class SwaggerConfig {
         return new ApiInfo(
                 "TEST REST API ", //title
                 "스프링부트 test 프로젝트", //description
-                "v2", //version
+                "v3", //version
                 "서비스 약관 URL", //termsOfServiceUrl
                 "linked2ev", //contactName
                 "License", //license

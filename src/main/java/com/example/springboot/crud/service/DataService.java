@@ -4,18 +4,14 @@ import com.example.springboot.crud.vo.DataVO;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 @Service
 public class DataService {
 
     private ArrayList array = new ArrayList();
 
-    public void pushData(Map param) {
-        for(Object key : param.keySet()){
-            array.add(key);
-        }
+    public void pushData(String param) {
+        array.add(param);
     }
 
     public ArrayList selectDataList() {
@@ -27,7 +23,7 @@ public class DataService {
     }
 
     public void updateData(DataVO dataVO) {
-        array.set(dataVO.getSeq(), dataVO.getText());
+        array.set(dataVO.getIndex(), dataVO.getText());
     }
 
 }
